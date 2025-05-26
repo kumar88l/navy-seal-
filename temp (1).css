@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Poiret+One&display=swap");
+
+* {
+	box-sizing: border-box;
+	font-family: "Poiret One", sans-serif;
+}
+
+header,
+main,
+footer {
+	width: 768px;
+	margin: 15px auto;
+}
+
+header,
+footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+h1 {
+	font-family: "Pacifico", cursive;
+	font-size: 38px;
+	background: #121fcf;
+	/* Разберись сам, как это работает :)
+	   Цвета можно подобрать свои :) */
+	background: linear-gradient(to right, #121fcf 0%, #cf1512 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+header img {
+	height: 70px;
+}
+
+main img{
+	display: block;
+	align-items: center;
+	justify-content: center;
+}
+
+ul {
+	display: flex;
+	justify-content: center;
+	gap: 8px;
+	width: 450px;
+	flex-wrap: wrap;
+	list-style: none;
+	margin: auto;
+}
+
+ul li a {
+	text-decoration: none;
+	width: 80px;
+	display: block;
+	border-radius: 10px;
+	text-align: center;
+	color: #222;
+	box-shadow: 0 0 2px 0 #4b93e6;
+	padding: 12px 15px;
+	transition: 0.4s;
+}
+
+ul li a:hover{
+	box-shadow: 0 0 2px 1px #4b93e6;
+	background-color: #fff;
+}
+
+#photo {
+	display: block;
+	width: 600px;
+	margin: 30px auto;
+	border-radius: 10px;
+	box-shadow: 0 0 1px 12px rgba(75,175,230,0.1);
+}
+
+footer p {
+	font-size: 12px;
+}
+
+.filter1{
+	filter: hue-rotate(35deg);
+}
+.filter2{
+	filter: hue-rotate(20deg);
+}
+.filter3{
+	filter: hue-rotate(75deg) blur(60px);
+}
+.filter4{
+	filter: hue-rotate(85deg);
+}
+.filter6{
+	filter: invert(100%);
+}
+.filter7{
+	filter: invert(30%);
+}
+.filter8{
+	filter: brightness(40%) contrast(10%) ;
+}
+
+
+@media (max-width:768px) {
+	header,
+	main,
+	footer{
+		width: 700px;
+	}
+	#photo {
+		width: 350px;
+	}
+	ul{
+		width:220px ;
+	}
+}
+
+@media (max-width:480px) {
+	header,
+	main,
+	footer{
+		width: 450px;
+	}
+	#photo {
+		width: 200px;
+	}
+	ul{
+		width:200px ;
+	}
+}

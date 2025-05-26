@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Poiret+One&display=swap");
+
+* {
+	box-sizing: border-box;
+	font-family: "Poiret One", sans-serif;
+    margin: auto;
+}
+body{
+    background-color: #c6f2ff;}
+header,
+main,
+footer {
+	width: 768px;
+	margin: 15px auto;
+}
+header img {
+	height: 150px;
+}
+footer img{
+    height: 200px;
+}
+.container {
+	display: flex;
+	justify-content: left;
+	gap: 8px;
+	width: 750px;
+    height: 450px;
+	flex-wrap: wrap;
+	list-style: none;
+	margin: auto;
+    background-color: #98c1ff;
+    border-radius: 20px;
+    font-size: 20px;
+    color: #622200 ;
+}
+.chu{
+    height: 50px;
+}
+li a {
+	text-decoration: none;
+	width: auto;
+	display: block;
+	border-radius: 10px;
+	text-align: center;
+	color: #fff;
+    background-color:  #ff5e00;
+	box-shadow: 0 0 2px 0 #351300;
+	padding: 12px 15px;
+	transition: 0.4s;
+}
+li a:hover{
+	box-shadow: 0 0 2px 1px #351300;
+    color: #222;
+	background-color: #fff;
+}
+@media (max-width:768px) {
+	header,
+	main,
+	footer{
+		width: 700px;
+	}
+	#logo {
+		width: 50px;
+	}
+	li{
+		width:220px ;
+	}
+}
+
+@media (max-width:480px) {
+	header,
+	main,
+	footer{
+		width: 450px;
+	}
+	#logo {
+		width: 10px;
+	}
+	li{
+		width:200px ;
+	}
+}
